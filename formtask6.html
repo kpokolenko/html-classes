@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formtask6</title>
+</head>
+<body>
+    <style>
+        .form  {
+            width: 350px;
+            height: 260px;
+            background-color: blue;
+            color: white;  
+        }
+        p {
+            font-size: 30px;
+        }
+        #user {
+            width: 250px;
+            margin-left: 25px;
+        }
+        .reg {
+            margin-top: 50px;
+            margin-left: 25px;
+        }
+        .sub {
+            background-color: orange;
+            margin-top: 25px;
+
+        }
+    </style> 
+    <div class="form">
+        <p style="margin-left: 25px;">Регистрация</p>
+        <form action="">
+            <label style="margin-left: 25px;" for="email">Email</label><br>
+            <input type="email" name="email" id="user" required autofocus> <br>
+            <div class="reg">
+                <label for="password">Пароль:</label>
+                <label style="margin-left: 74px;" for="password2">Еще раз:</label><br>
+                <input type="password" size="13" name="pass">
+                <input type="password2" size="13" name="pass">
+                <input type="submit" class="sub" name="submit" value="отправить">
+            </div>
+        </form> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formtask7</title>
+</head>
+<body>
+    <style>
+        table, td, th {
+	        border: 2px solid black;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        textarea {
+            overflow-y: scroll;
+            resize: none;
+            height: 100px;
+            width: 363px;
+        }
+        .button1 {
+            padding: 4px 35px;
+            margin-top: 10px;
+        }
+        .button2 {
+            padding: 4px 35px;
+        }
+    </style>
+    <h1>Анкета Web-разроботчика</h1>
+    <table>
+        <colgroup>
+            <col style="background-color: wheat;">
+            <col style="background-color: silver;">
+        </colgroup>
+        <tr>
+            <td class="1">Регистрационное имя</td>
+            <td>
+                <form action="">
+                    <input type="email" name="email">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Пароль</td>
+            <td>
+                <form action="">
+                    <input type="password" name="password"><br>
+                    <input type="password" name="password">:подтвердите пароль
+                </form>
+            </td>
+        </tr>
+        <tr></tr>
+            <td>Ваша спецализация</td>
+            <td>
+                <form action="">
+                    <select>
+                        <option>Web-мастер</option>
+                    </select>
+                </form>
+            </td>
+        <tr>
+            <td>Пол</td>
+            <td>
+                <form action="">
+                    <input type="radio" name="gender" checked value="М"><span>М</span>
+                    <input type="radio" name="gender" value="Ж"><span>Ж</span>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Ваши навыки</td>
+            <td>
+                <form action="">
+                    <input type="checkbox" name="option1" value="o1">знание HTML и CSS<br>
+                    <input type="checkbox" name="option2" value="o2">знание Знание Perl<br>
+                    <input type="checkbox" name="option3" value="o3">знание ASP<br>
+                    <input type="checkbox" name="option4" value="o4">знание Adobe Photoshop<br>
+                    <input type="checkbox" name="option5" value="o5">знание JAVA<br>
+                    <input type="checkbox" name="option6" value="o6">знание JavaScript<br>
+                    <input type="checkbox" name="option7" value="o7">знание Flash<br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Дополнительные<br>свединия о себе</td>
+            <td>
+                <form action="">
+                    <textarea name="still"></textarea>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" name="submit" class="button1" value="зарегистрировать"> <input type="reset" name="reset" class="button2" value="очистить форму">
+</body>
+</html>

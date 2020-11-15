@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form1</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Данные пользователя</legend>
+            <label for="firstname">Имя</label><br>
+            <input type="firstname" name="firstname"><br>
+            <label for="lastname">Фамилия</label><br>
+            <input type="lastname" name="lastname"><br>
+            <label for="radio">Укажите пол:</label>
+            <input type="radio" name="question" value="men"><span>мужской</span>
+            <input type="radio" name="question" value="women"><span>женский</span><br>
+            <label for="language">Родной язык:</label><br>
+            <label for="checkbox">Русский</label>
+            <input type="checkbox" name="Russian"><br>
+            <label for="checkbox">Английский</label>
+            <input type="checkbox" name="English"><br>
+            <label for="checkbox">Белорусский</label>
+            <input type="checkbox" name="Belarussian"><br>
+            <label for="select">Выберите страну проживания:</label>
+            <select>
+                <option value="BY">РБ</option>
+                <option value="RU">РФ</option>
+                <option value="USA">USA</option>
+            </select><br>
+            <label for="file">Прикрепите фото:</label>
+            <input type="file" name="photo"><br>
+        </fieldset>
+        <input type="submit" name="submit">
+    </form>      
+</body>
+</html>
