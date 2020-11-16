@@ -8,16 +8,14 @@
     <style>
         .form  {
             width: 350px;
-            height: 260px;
+            height: 210px;
             background-color: blue;
             color: white;  
-        }
-        p {
-            font-size: 30px;
         }
         #user {
             width: 250px;
             margin-left: 25px;
+            margin-top: 4px;
         }
         .reg {
             margin-top: 50px;
@@ -26,13 +24,26 @@
         .sub {
             background-color: orange;
             margin-top: 25px;
-
         }
+        .baner {
+            background-color:blue;
+            width: 350px;
+            height: 50px;
+            border-bottom: 2px solid white;
+        }
+        .text {
+            font-size: 25px;
+            color: white;
+            padding-left: 25px;
+        }
+
     </style> 
+    <div class="baner">
+        <p class="text">Регистрация</p>      
+    </div>
     <div class="form">
-        <p style="margin-left: 25px;">Регистрация</p>
         <form action="">
-            <label style="margin-left: 25px;" for="email">Email</label><br>
+            <span style="margin-left: 25px;"><label for="email">Email</label></span><br>
             <input type="email" name="email" id="user" required autofocus> <br>
             <div class="reg">
                 <label for="password">Пароль:</label>
